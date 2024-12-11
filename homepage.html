@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div id="screen-pictures" onclick="opacity_off()">
+      <img src="gallery-image-1.jpg" alt="" class="screen-image" id="screen-image-1" onclick="opacity_off()">
+      <img src="gallery-image-2.jpg" alt="" class="screen-image" id="screen-image-2" onclick="opacity_off()">
+      <img src="gallery-image-3.jpg" alt="" class="screen-image" id="screen-image-3" onclick="opacity_off()">
+      <img src="gallery-image-4.jpg" alt="" class="screen-image" id="screen-image-4" onclick="opacity_off()">
+      <img src="gallery-image-5.jpg" alt="" class="screen-image" id="screen-image-5" onclick="opacity_off()">
+      <img src="gallery-image-6.jpeg" alt="" class="screen-image" id="screen-image-6" onclick="opacity_off()">
+    </div>
+    <div class="top-bg" id="top-bg">
+      <img class="bg-img" src="Green Forest (1920x1080).jpg" alt="">
+    </div>
+    <div class="main" id="main">
+      <div class="sticky">
+        <div class="sidebar">
+          <img src="rope.png" alt="" class="rope" id="rope-1">
+          <img src="rope.png" alt="" class="rope" id="rope-2">
+          <div class="navigation-2">
+            <div class="nav">
+              <img src="sign.png" alt="" class="nav-img">
+              <a href="#top-bg" class="anchor" id="top-2-anchor">
+                Наверх
+              </a>
+            </div>
+            <div class="nav">
+              <img src="sign.png" alt="" class="nav-img">
+              <a href="#main" class="anchor" id="gallery-2-anchor">
+                Галерея
+              </a>
+            </div>
+            <div class="nav">
+              <img src="sign.png" alt="" class="nav-img">
+              <a href="#slider-div" class="anchor" id="request-2-anchor">
+                Заказы
+              </a>
+            </div>
+            <div class="nav">
+              <img src="sign.png" alt="" class="nav-img">
+              <a href="#contacts" class="anchor" id="contacts-2-anchor">
+                Контакты
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="bear">
+          <img class="bear-img" src="bear.webp" alt="">
+        </div>
+        <div class="bushes">
+          <img src="bush-wall-horizontal.png" alt="" class="bushwall" id="bushwall-1">
+          <img src="bush-wall-horizontal.png" alt="" class="bushwall" id="bushwall-2">
+          <img src="bush-wall-horizontal.png" alt="" class="bushwall" id="bushwall-3">
+          <img src="bush-wall-vertical.png" alt="" class="bushwall" id="bushwall-4">
+          <img src="bush-wall-vertical.png" alt="" class="bushwall" id="bushwall-5">
+          <img src="bush-wall-vertical.png" alt="" class="bushwall" id="bushwall-6">
+          <img src="bush-wall-vertical.png" alt="" class="bushwall" id="bushwall-7">
+          <img class="bush" id="bush-1" src="bush (1).png" alt="">
+          <img class="bush" id="bush-2" src="bush (1).png" alt="">
+          <img class="bush" id="bush-3" src="bush (1).png" alt="">
+          <img class="bush" id="bush-4" src="bush (1).png" alt="">
+        </div>
+        <div class="header">
+          <img src="logo.png" alt="" class="logo">
+          <div class="navigation">
+            <div class="nav">
+              <img src="sign.png" alt="" class="nav-img">
+              <a href="#contacts" class="anchor" id="contacts-anchor">
+                Контакты
+              </a>
+            </div>
+            <div class="nav">
+              <img src="sign.png" alt="" class="nav-img">
+              <a href="#slider-div" class="anchor" id="request-anchor">
+                Заказы
+              </a>
+            </div>
+            <div class="nav">
+              <img src="sign.png" alt="" class="nav-img">
+              <a href="#main" class="anchor" id="gallery-anchor">
+                Галерея
+              </a>
+            </div>
+            <div class="nav">
+              <img src="sign.png" alt="" class="nav-img">
+              <a href="#top-bg" class="anchor" id="top-anchor">
+                Наверх
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="key-phrase">Красота в движении!</div>
+      <div class="contents" id="gallery">
+        <div class="gallery-header">Путешествуя по миру, можно найти невероятное количество интересных мест и животных!</div>
+        <div class="gallery">
+          <div class="gallery-slot" id="gallery-slot-1">
+            <img src="gallery-image-1.jpg" alt="there used to be trees" class="gallery-image" id="gallery-image-1" onclick="overlay_on_1()">
+          </div>
+          <div class="gallery-slot" id="gallery-slot-2">
+            <img src="gallery-image-2.jpg" alt="there used to be trees" class="gallery-image" id="gallery-image-2" onclick="overlay_on_2()">
+          </div>
+          <div class="gallery-slot" id="gallery-slot-3">
+            <img src="gallery-image-3.jpg" alt="there used to be trees" class="gallery-image" id="gallery-image-3" onclick="overlay_on_3()">
+          </div>
+          <div class="gallery-slot" id="gallery-slot-4">
+            <img src="gallery-image-4.jpg" alt="there used to be trees" class="gallery-image" id="gallery-image-4" onclick="overlay_on_4()">
+          </div>
+          <div class="gallery-slot" id="gallery-slot-5">
+            <img src="gallery-image-5.jpg" alt="there used to be trees" class="gallery-image" id="gallery-image-5" onclick="overlay_on_5()">
+          </div>
+          <div class="gallery-slot" id="gallery-slot-6">
+            <img src="gallery-image-6.jpeg" alt="there used to be trees" class="gallery-image" id="gallery-image-6" onclick="overlay_on_6()">
+          </div>
+        </div>
+        <div class="slider-div" id="slider-div">
+          <div class="slider-header">Мы можем сделать фотосъёмку чего вы хотите и где вы хотите!</div>
+          <div class="slider">
+            <div class="slide" id="slide-1">
+              <img class="request-image" src="request-image-1.jpg" alt="">
+              <div class="request">Заказ #1</div>
+              <div class="request-info">Фотосъёмка в лекгодоступных и наименее опасных местах, съёмка животных издека (1-2 км)</div>
+              <button class="more-info">Подробнее</button>
+            </div>
+            <div class="slide" id="slide-2">
+              <img class="request-image" src="request-image-2.jpg" alt="">
+              <div class="request">Заказ #2</div>
+              <div class="request-info">Фотосъёмка в районах средней доступности, съёмка животных со среднего расстояния (400-500 м)</div>
+              <button class="more-info">Подробнее</button>
+            </div>
+            <div class="slide" id="slide-3">
+              <img class="request-image" src="request-image-3.jpg" alt="">
+              <div class="request">Заказ #3</div>
+              <div class="request-info">Фотосъёмка в труднодоступных и опасных районах, съёмка животных с близкого расстояния (100-200 м)</div>
+              <button class="more-info">Подробнее</button>
+            </div>
+            <button class="slider-button" id="slider-right" onclick="slide_display(1)">&rang;</button>
+            <button class="slider-button" id="slider-left" onclick="slide_display(-1)">&lang;</button>
+          </div>
+        </div>
+        <div class="contacts" id="contacts">
+          <div class="contacts-header">Контактная информация</div>
+          <img src="photographer-default-image.jpg" alt="There supposed to be an avatar" class="photographer-image">
+          <div class="photographer-name">
+            Папарациев Штатив Камерович
+          </div>
+          <div class="photographers-phone-number">+79998887711</div>
+          <div class="photographers-email-adress">phogoemailadress@gmail.com</div>
+        </div>
+        <a class="footer" href="#top-bg">
+          You have reached the bottom! Congratulations!
+          <img src="upper arrow.png" alt="">
+          <img src="upper arrow.png" alt="">
+        </a>
+      </div>
+    </div>
+    <script>
+      function overlay_on_1() {
+        document.getElementById("screen-pictures").style.display="flex";
+        document.getElementById("screen-image-1").style.display="block";
+        setTimeout(opacity_on_1,150);
+        
+      }
+      function opacity_on_1(){
+        document.getElementById("screen-pictures").style.opacity=1;
+        document.getElementById("screen-image-1").style.opacity=1;
+      }
+      function overlay_on_2() {
+        document.getElementById("screen-pictures").style.display="flex";
+        document.getElementById("screen-image-2").style.display="block";
+        setTimeout(opacity_on_2,150);
+      }
+      function opacity_on_2(){
+        document.getElementById("screen-pictures").style.opacity=1;
+        document.getElementById("screen-image-2").style.opacity=1;
+      }
+      function overlay_on_3() {
+        document.getElementById("screen-pictures").style.display="flex";
+        document.getElementById("screen-image-3").style.display="block";
+        setTimeout(opacity_on_3,150);
+      }
+      function opacity_on_3(){
+        document.getElementById("screen-pictures").style.opacity=1;
+        document.getElementById("screen-image-3").style.opacity=1;
+      }
+      function overlay_on_4() {
+        document.getElementById("screen-pictures").style.display="flex";
+        document.getElementById("screen-image-4").style.display="block";
+        setTimeout(opacity_on_4,150);
+      }
+      function opacity_on_4(){
+        document.getElementById("screen-pictures").style.opacity=1;
+        document.getElementById("screen-image-4").style.opacity=1;
+      }
+      function overlay_on_5() {
+        document.getElementById("screen-pictures").style.display="flex";
+        document.getElementById("screen-image-5").style.display="block";
+        setTimeout(opacity_on_5,150);
+      }
+      function opacity_on_5(){
+        document.getElementById("screen-pictures").style.opacity=1;
+        document.getElementById("screen-image-5").style.opacity=1;
+      }
+      function overlay_on_6() {
+        document.getElementById("screen-pictures").style.display="flex";
+        document.getElementById("screen-image-6").style.display="block";
+        setTimeout(opacity_on_6,150);
+      }
+      function opacity_on_6(){
+        document.getElementById("screen-pictures").style.opacity=1;
+        document.getElementById("screen-image-6").style.opacity=1;
+      }
+      function overlay_off() {
+        document.getElementById("screen-pictures").style.display="none";
+        document.getElementById("screen-image-1").style.display="none";
+        document.getElementById("screen-image-2").style.display="none";
+        document.getElementById("screen-image-3").style.display="none";
+        document.getElementById("screen-image-4").style.display="none";
+        document.getElementById("screen-image-5").style.display="none";
+        document.getElementById("screen-image-6").style.display="none";
+      }
+      function opacity_off(){
+        document.getElementById("screen-pictures").style.opacity=0;
+        document.getElementById("screen-image-1").style.opacity=0;
+        document.getElementById("screen-image-2").style.opacity=0;
+        document.getElementById("screen-image-3").style.opacity=0;
+        document.getElementById("screen-image-4").style.opacity=0;
+        document.getElementById("screen-image-5").style.opacity=0;
+        document.getElementById("screen-image-6").style.opacity=0;
+        setTimeout(overlay_off,150);
+      }
+      var slideIndex = 0;
+
+      // function slide_switch(n) {
+      //   slide_display(slideIndex += n);
+      // }
+
+      function slide_display(n) {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        if (n>0){
+          x[slideIndex].style.transition="all .3s";
+          x[slideIndex].style.transform ="translate3d(-30px,0px,0px)";
+          x[slideIndex].style.scale=1.5;
+          x[slideIndex].style.opacity=0;
+          setTimeout(() => {
+            x[slideIndex].style.transition="all 0s";
+            x[slideIndex].style.display="none";
+            x[slideIndex].style.opacity=1;
+            x[slideIndex].style.transform ="translate3d(0px,0px,0px)";
+            x[slideIndex].style.scale=1.8;
+            slideIndex=(slideIndex+n)%3;
+          },300);
+          
+          x[(slideIndex+n)%3].style.transition="all .3s";
+          x[(slideIndex+n)%3].style.display="flex";
+          x[(slideIndex+n)%3].style.scale=1.5;
+          x[(slideIndex+n)%3].style.transform="translate3d(30px,0px,0px)";
+          setTimeout(()=>{
+          x[(slideIndex+n)%3].style.opacity=0;
+          x[(slideIndex+n)%3].style.opacity=1; 
+          x[(slideIndex+n)%3].style.transform ="translate3d(0px,0px,0px)";
+          x[(slideIndex+n)%3].style.scale=1.8;
+          },100);
+
+        }
+        if (n<0){
+          x[slideIndex].style.transition="all .3s";
+          x[slideIndex].style.transform ="translate3d(30px,0px,0px)";
+          x[slideIndex].style.scale=1.5;
+          x[slideIndex].style.opacity=0;
+          setTimeout(() => {
+            x[slideIndex].style.transition="all 0s";
+            x[slideIndex].style.display="none";
+            x[slideIndex].style.opacity=1;
+            x[slideIndex].style.transform ="translate3d(0px,0px,0px)";
+            x[slideIndex].style.scale=1.8;
+            if (((slideIndex+n)%3)<0){
+              slideIndex=3+((slideIndex+n)%3);
+            }
+            else{
+              slideIndex=(slideIndex+n)%3;
+            }
+          },300);
+          if (((slideIndex+n)%3)<0){
+            x[3+((slideIndex+n)%3)].style.transition="all .3s";
+            x[3+((slideIndex+n)%3)].style.display="flex";
+            x[3+((slideIndex+n)%3)].style.scale=1.5;
+            x[3+((slideIndex+n)%3)].style.transform="translate3d(-30px,0px,0px)";
+            setTimeout(()=>{
+            x[3+((slideIndex+n)%3)].style.opacity=0;
+            x[3+((slideIndex+n)%3)].style.opacity=1; 
+            x[3+((slideIndex+n)%3)].style.transform ="translate3d(0px,0px,0px)";
+            x[3+((slideIndex+n)%3)].style.scale=1.8;
+            },100);}
+          else{
+            x[(slideIndex+n)%3].style.transition="all .3s";
+            x[(slideIndex+n)%3].style.display="flex";
+            x[(slideIndex+n)%3].style.scale=1.5;
+            x[(slideIndex+n)%3].style.transform="translate3d(-30px,0px,0px)";
+            setTimeout(()=>{
+            x[(slideIndex+n)%3].style.opacity=0;
+            x[(slideIndex+n)%3].style.opacity=1; 
+            x[(slideIndex+n)%3].style.transform ="translate3d(0px,0px,0px)";
+            x[(slideIndex+n)%3].style.scale=1.8;
+            },100);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
