@@ -13,7 +13,7 @@ body{
   flex-direction: column;
   user-select: none;
   color:white;
-  overflow-x:hidden;
+  overflow-x:clip;
   font-family:Roboto,arial;
 }
 
@@ -78,6 +78,7 @@ body{
   align-self: center;
   justify-content: center;
   z-index: 99;
+  overflow-x:initial !important
 }
 
 .bear{
