@@ -58,12 +58,6 @@ body{
   width:1544px;
 }
 
-@media (max-width:880px) or (max-height:600px){
-  .top-bg{
-    display: none;
-  }
-}
-
 .main{
   position: relative;
   display: flex;
@@ -72,14 +66,6 @@ body{
   /* height:5000px; */
   background: linear-gradient(0deg, rgba(20,0,0,1) 0%, rgba(4,50,0,1) 100%);
   padding: 0 250px;
-  z-index: 0;
-}
-
-@media (max-width:1000px){
-  .main{
-    padding-left: 100px;
-    padding-right:100px;
-  }
 }
 
 .sticky{
@@ -89,10 +75,6 @@ body{
   top:0;
   align-self: center;
   justify-content: center;
-  z-index: 99;
-}
-
-.sticky div:not(:first-of-type){
   z-index: 99;
 }
 
@@ -113,10 +95,6 @@ body{
   align-self: center;
   justify-content: center;
   width:1544px;
-}
-
-.bushes *{
-  z-index: 99;
 }
 
 .bush{
@@ -198,12 +176,6 @@ body{
   top:-650px;
   user-select:text;
   text-wrap:nowrap;
-}
-
-@media (max-width:1150px){
-  .key-phrase{
-    display: none;
-  }
 }
 
 .contents{
@@ -483,15 +455,6 @@ body{
   font-style: italic;
 }
 
-@media (max-width:1307px){
-  .header{
-    display: none;
-  }
-  .sidebar{
-    display: flex;
-  }
-}
-
 #top-anchor{
   top:41px;
   right:135px;
@@ -517,20 +480,17 @@ body{
 }
 
 .sidebar{
-  position: absolute;
-  top: 0;
-  left:0;
-  z-index: 98;
+  position: fixed;
   display: none;
-}
-
-.sidebar img{
-  z-index: 98 ;
+  top: -12px;
+  left:-70px;
+  z-index: 98;
+  /* display: none; */
 }
 
 .rope{
   position: absolute;
-  top:120px;
+  top:0px;
   left:120px;
 }
 
@@ -539,7 +499,7 @@ body{
 }
 
 .navigation-2{
-  position: absolute;
+  position: relative;
   z-index: 101;
   left:95px;
   top:200px;
@@ -549,19 +509,11 @@ body{
 }
 
 .navigation-2 *{
-  z-index: 101;
-}
-
-#top-2-anchor{
-  top:41px;
-  left:15px;
-  z-index: 101;
-  position: absolute;
-  padding: 22.5px 26px;
+  color: wheat;
 }
 
 #gallery-2-anchor{
-  top:194.5px;
+  top:40.5px;
   left:15px;
   z-index: 101;
   position: absolute;
@@ -569,7 +521,7 @@ body{
 }
 
 #request-2-anchor{
-  top:348.5px;
+  top:195px;
   left:15px;
   z-index: 101;
   position: absolute;
@@ -577,9 +529,46 @@ body{
 }
 
 #contacts-2-anchor{
-  top:503px;
+  top:349px;
   left:15px;
   z-index: 101;
   position: absolute;
   padding: 22.5px 9px;
+}
+
+.sidebar-logo{
+  position: fixed;
+  display:none;
+  width:130px;
+  top:-5px;
+  left:37px;
+  z-index: 100;
+}
+
+@media (max-width:1307px){
+  .top-bg{
+    display: none;
+  }
+  .key-phrase{
+    display: none;
+  }
+  .header{
+    display: none;
+  }
+  .sidebar{
+    display: flex;
+  }
+  .sidebar-logo{
+    display:block;
+  }
+  .main{
+    padding-left: 180px;
+    padding-right:100px;
+  }
+}
+
+@media (max-height:600px){
+  .top-bg{
+    display: none;
+  }
 }
