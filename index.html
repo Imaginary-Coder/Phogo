@@ -148,7 +148,7 @@
           <div class="photographers-phone-number">+79998887711</div>
           <div class="photographers-email-adress">phogoemailadress@gmail.com</div>
         </div>
-        <a class="footer" href="#top-bg">
+        <a class="footer" href="#main">
           You have reached the bottom! Congratulations!
           <img src="upper arrow.png" alt="">
           <img src="upper arrow.png" alt="">
@@ -156,6 +156,16 @@
       </div>
     </div>
     <script>
+      var slideIndex = 0;
+      while (true){
+        task(i);
+      }
+      function task(i){
+        setTimeout(function(){
+          document.body.style.width=screen.width+"px";
+        },1000*i)
+      }
+
       function overlay_on_1() {
         document.getElementById("screen-pictures").style.display="flex";
         document.getElementById("screen-image-1").style.display="block";
@@ -230,11 +240,6 @@
         document.getElementById("screen-image-6").style.opacity=0;
         setTimeout(overlay_off,150);
       }
-      var slideIndex = 0;
-
-      // function slide_switch(n) {
-      //   slide_display(slideIndex += n);
-      // }
 
       function slide_display(n) {
         var i;
